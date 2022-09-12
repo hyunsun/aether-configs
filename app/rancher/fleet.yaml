@@ -1,0 +1,11 @@
+name: rancher
+defaultNamespace: cattle-system
+helm:
+  releaseName: rancher
+  repo: https://releases.rancher.com/server-charts/stable
+  chart: rancher
+  version: v2.6.8
+  values:
+    hostname: "rancher.my-vcluster.org"
+    replicas: 1
+    bootstrapPassword: "adminpassword"
