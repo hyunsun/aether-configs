@@ -6,6 +6,7 @@ helm:
   chart: rancher
   version: v2.6.8
   values:
-    hostname: "rancher.my-vcluster.org"
+    ingress:
+      enabled: false
     replicas: 1
     bootstrapPassword: "adminpassword"
