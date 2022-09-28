@@ -1,0 +1,9 @@
+name: cert-manager
+defaultNamespace: cert-manager
+helm:
+  releaseName: cert-manager
+  repo: https://charts.jetstack.io
+  chart: cert-manager
+  version: v1.5.1
+  values:
+    installCRDs: true
